@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+.cuadro-horario{
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.title-horario{
+    margin-top: 15px ;
+/* B- Heading 1 */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+
+/* B - DB COLOR 2 */
+
+color: #383B58;
+}
+.subtitle-horario{
+    margin-top: 15px ;
+    /* B- Heading 1 */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    
+    /* B - DB COLOR 2 */
+    color: #383B58;
+}
+.p-horario{
+    margin-top: 15px ;
+    /* B- Heading 1 */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    
+    /* B - DB COLOR 2 */
+    color: #383B58;
+}
+
+.select-horario{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+height: 40px;
+width: 388px;
+left: 0px;
+top: 0px;
+margin-top: 10px;
+}
+.optionHorario{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 10px;
+
+}
+/* Responsive */
+@media screen and (max-width: 768px){
+ 
+}
+@media screen and (max-width: 460px){
+  
+    .optionHorario{
+       
+        font-size: 14px;   
+    }
+    .select-horario{
+       
+    width: 300px;
+    left: 0px;
+    top: 0px;
+    margin-top: 10px;
+    }
+    .subtitle-horario{
+        margin-top: 15px ;
+        
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        
+        /* B - DB COLOR 2 */
+        color: #383B58;
+    }
+    .title-horario{
+        margin-top: 15px ;
+    /* B- Heading 1 */
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    
+    /* B - DB COLOR 2 */
+    
+    color: #383B58;
+    }
+    .p-horario{
+        margin-top: 15px ;
+        /* B- Heading 1 */
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        
+        /* B - DB COLOR 2 */
+        color: #383B58;
+    }
+
+}

@@ -1,0 +1,55 @@
+.contenedorTodasPoliticas li{
+    list-style: none;
+}
+
+.contenedorTodasPoliticas{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 30px 70px 30px;
+  
+}
+
+.titulo-politicas{
+    border-bottom: 2px solid #1DBEB4;
+    padding: 15px 30px 8px;
+}
+
+.listaPoliticas ul{
+    padding: 0;
+    
+}
+
+.listaPoliticas li{
+    font-size: 14px;
+    padding:4px };
+
+
+@media screen and (max-width: 768px){
+ .contenedorTodasPoliticas {
+            flex-direction: column;
+        }
+}
+@media screen and (max-width: 768px){
+    .contenedorTodasPoliticas{
+        display: flex;
+   
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 40px;        
+        padding: 28px;
+        margin-bottom: 30px;
+    }}
+
+@media screen and (max-width: 460px){
+
+.contenedorTodasPoliticas{
+flex-direction: column;
+gap: 40px;        
+padding: 5px;
+margin-bottom: 30px;
+margin-top: 20px;
+}
+}
+
+

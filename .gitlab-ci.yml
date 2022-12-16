@@ -1,0 +1,27 @@
+image: registry.gitlab.com/gitlab-org/terraform-images/stable:latest
+
+
+stages:         
+  - build
+  - test
+  - deploy
+
+build:       
+  stage: build
+  image: maven:latest
+  script:
+    - echo "Compiling the code..."
+    - echo "Compile complete."
+
+test:   
+  stage: test    
+  script:
+    - echo "Running unit tests..."
+
+
+deploy:      
+  stage: deploy  
+  environment: production
+  script:
+    - echo "Deploying application..."
+    - echo "Application successfully deployed."

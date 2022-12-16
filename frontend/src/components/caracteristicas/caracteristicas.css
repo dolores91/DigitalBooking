@@ -1,0 +1,31 @@
+.titulo-caracteristicas{
+    border-bottom: 2px solid #1DBEB4;
+      padding: 8px 30px;
+   
+   }
+   
+   .container-caracteristicas{
+       display: flex;
+       justify-content: space-around;
+       padding: 15px 30px;
+       flex-wrap: wrap;
+   }
+   
+   .icono-card-caracteristica{
+       color: #1DBEB4;
+       margin-right: 5px ;}
+       
+   .card-caracteristica{
+       padding-bottom: 20px;
+   }
+   
+   @media screen and (max-width: 768px){
+       .container-caracteristicas{
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           padding: 30px;
+           gap: 30px;
+       }
+   }
+   
+   

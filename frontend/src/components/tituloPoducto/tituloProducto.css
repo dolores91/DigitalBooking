@@ -1,0 +1,30 @@
+
+.container-titulo-producto{ background-color: #545776;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 78px;
+    width: 100%;    
+    padding: 0 35px;
+  }
+
+  .titulo-producto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .titulo-producto p {
+      font-size: 14px;
+  }
+  .iconoVolver{
+    color: white;
+    font-weight: 900;
+    height: 30px;
+    margin-top: 12px;
+  }
+
+  .link-volver{
+    text-decoration: none;
+  }

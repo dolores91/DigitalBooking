@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.navbar{
+  
+    background-color: #FFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 30px 5px 35px;
+    position: fixed !important;
+    align-items:center;
+    color: #1DBEB4; 
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    flex-flow: row wrap;
+
+}
+
+.navbar-Brand{
+    display: flex;
+    color: #FFFF;
+    align-items: center;
+   
+}
+
+.parrafoNavBar {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 0;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.botonesNavBar{
+    display: flex;
+    padding: 0px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+img {
+    padding: 10px;
+}
+
+.buttonCuentaNavBar, .buttonSesionNavBar{
+    transition: .1s ease all;
+}
+
+.buttonCuentaNavBar:hover, .buttonSesionNavBar:hover {
+    background: #799795;
+    color: #b1e7e3;
+    padding: 7px 20px;
+}
+
+@media screen and (max-width: 700px){
+    .parrafoNavBar{
+        display: none;
+        visibility: hidden;
+    }
+
+    .botonesNavBar{
+        visibility: hidden;
+        align-items: flex-end;
+    }
+
+    .buttonCuentaNavBar, .buttonSesionNavBar{
+        width: 0%;
+        display: none;
+        visibility: hidden;
+    }
+
+    .navbar{
+        height: 93px;
+    }
+}
+
+.navbar-brand{
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -7px;
+}
+
+.buttonCuentaNavBar, .buttonSesionNavBar{
+    display: flex;
+    background: #FFFF;
+    border: 1px solid #1DBEB4;
+    border-radius: 5px;
+    color: #1DBEB4;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px 5px;
+    margin: 5px; 
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.link-header{
+    text-decoration: none;
+}
+
+.bienvenida{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+
+    }
+   
+.circulo{
+    
+    border-radius: 50%;
+    background-color: #545776 ;
+    color: white;
+    padding: 5%;
+    margin-right: 5%;
+    font-weight: 700;
+    font-size: 1.9rem;
+    
+}
+.vertical {
+    border-left: 4px solid #1DBEB4;
+    height: 60px;
+    margin-right: 15px;
+    margin-left: 15px;
+   
+}
+.hola{
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto';
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 19px;
+}
+.nombre{
+    font-family: 'Roboto';
+    font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 19px;
+}
+.adm{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 19px;
+/* identical to box height */
+text-align: right;
+/* B -DB COLOR 3 */
+color: #545776;
+margin-top: 0px;
+text-decoration: none;
+
+}
+.saludo{
+    margin-right: 5%;
+    margin-top: 0%;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.close{
+    margin-right: 50px;
+    align-self:flex-start;
+    font-size: larger;
+}
+.btnX{
+color: #545776;
+border: none;
+font-size: 30px;
+font-weight: 700;
+background-color:  #FFFF;
+}
+
+.link-header{
+    text-decoration: none;
+}
+
+.navbar-button{
+    display: none;
+    cursor: pointer;
+}
+
+.menu{
+    visibility: hidden;
+}
+
+.navbar-svg{
+    width: 2em;
+    height: 2em;
+    fill: #1DBEB4;
+}
+
+.navbar-nav{
+    background-color: #1DBEB4;
+}
+
+.navbar-ul{
+    display: flex;
+    background-color: white;
+    visibility: visible;
+    font-size: 25px;
+    margin-right: 15px;
+    z-index: 1000;
+}
+
+.navbar-li{
+    margin: 0 .5em;
+    margin-right: 30px;
+    display: none;
+
+}
+
+.navbar-a{
+    width: 216px;
+    height: 21px;
+    display: none;
+}
+
+/*IPAD mini*/
+/*Iphone 12 PRO*/
+
+@media screen and (max-width: 390px){
+    .botonesNavBar, .buttonCuentaNavBar, .buttonSesionNavBar{
+        display: none;
+        visibility: hidden;
+        width: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 390px){
+    .navbar-button{
+        display: flex;
+    }
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: right;
+        align-items: center;
+        height: 0vh;
+        overflow: hidden;
+        opacity: 0;
+        transition: all .5s ease;
+    }
+    .navbar-nav.isActive{
+        height: 50vh;
+        opacity: 1;
+    }
+    .navbar-ul{
+        flex-direction: column;
+        display: flex;
+        
+    }
+    .navbar-li{
+        margin: .5em 0;
+        display: flex;
+    }
+
+    .navbar-a{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .menu {
+        visibility: visible;
+        font-size: 25px;
+        margin-right: 15px;
+        z-index: 1000;
+        background-color: #1DBEB4;
+      }
+
+}

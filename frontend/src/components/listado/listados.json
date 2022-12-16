@@ -1,0 +1,75 @@
+[
+    
+    {   "id": 1,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/103332032.jpg?k=eec2c4ec1c514980d37678e8aae8149a0bcc27a5c5c855ebcf5fe50c82b3528a&o=&hp=1",
+        "categoria":"Hotel",
+        "titulo":"Novotel Buenos Aires",
+        "ubicacion":"Av Corrientes 1334, Buenos Aires",
+        "descipcion":"El Novotel Buenos Aires está situado en la avenida Corrientes y ofrece habitaciones amplias con TV LCD."
+        
+    },
+    {   "id":2,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/12856179.jpg?k=e683d0e1dc47c513e9ece826affd0d136e1328c1b24c9a7c96c2dc560860569d&o=&hp=1",
+        "categoria":"Hotel",
+        "titulo":"Nido del Cóndor Hotel & Spa",
+        "ubicacion":"Avenida Bustillo km 6,900,Bariloche",
+        "descipcion":"El Nido del Cóndor Hotel & Spa permite disfrutar de la calidez de una casa de campo con todas las comodidades de un hotel de 5 estrellas"
+
+    },
+
+    { "id":3,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/4527213.jpg?k=cf3d171939ae5c66e0e224652ec8122f8dd55d173d31437715e883eb4895a433&o=&hp=1",
+        "categoria":"Hostel",
+        "titulo":"Hostel Carlos Gardel",
+        "ubicacion":"Carlos Calvo 579, San Telmo, Buenos Aires",
+        "descipcion":"El Hostel Carlos Gardel ocupa una pintoresca casa temática de Tango y ofrece conexión de wifi gratis en San Telmo."
+
+
+    },
+    { "id":4,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1024x768/308619792.jpg?k=66bb8fe4ce5209eddf48ba2e8db4dd133db7b584f5882d61bf9a2d1a51624a2b&o=&hp=1",
+        "categoria":"Hostel",
+        "titulo":"KM Sun Hostel",
+        "ubicacion":"Avenida Boock 199 Avenida Boock 199, Bariloche",
+        "descipcion":"El KM SUN HOSTEL, situado en San Carlos de Bariloche, a 300 metros de Melipal, ofrece alojamiento con bar, estacionamiento privado"
+
+
+    },
+
+    { "id":5,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/374982866.jpg?k=7a0a1058df9fb61026435509285f8d0574d8a070756e11f474a364fff165bf39&o=&hp=1",
+        "categoria":"Departamento",
+        "titulo":"Calchaquí 6",
+        "ubicacion":"Intendente Brachieri 50 1º piso, Cafayate",
+        "descipcion":"El CALCHAQUÍ 6 en el corazón de Cafayate ofrece alojamiento en Cafayate, a 700 metros de la Bodega Nanni, a 1,1 km de la Bodega el Esteco"
+
+    },
+
+
+    { "id":6,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/182945729.jpg?k=6d9b9aea224c7ca9e9caa258eb0a8c7b9a294c4800def9a802da16b0aee58b5d&o=&hp=1",
+        "categoria":"Bed and breakfast",
+        "titulo":"El Porvenir Casa de Bodega",
+        "ubicacion":"Belgrano and Jujuy S/N, 4427 Cafayate",
+        "descipcion":"El Porvenir Vineyard Suite (Finca El Retiro) se encuentra en Cafayate, en la provincia de Salta, a 1,3 km de los viñedos de Cafayate, y ofrece pileta exterior de temporada y parrilla."
+
+    },
+
+    {"id":7,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/339959005.jpg?k=8ef6a15870cef06fe4b73415b96d4625958c0256db1443b76e95c82e802b7507&o=&hp=1",
+        "categoria":"Bed and breakfast",
+        "titulo":"Posta de Purmamarca",
+        "ubicacion":"Santa Rosa s/n,  Purmamarca",
+        "descipcion":"El Posta de Purmamarca se encuentra a los pies de la montaña de los Siete Colores, en Purmamarca, ofrece un desayuno continental gratuito"
+    },
+
+    {"id":8,
+        "url":"https://t-cf.bstatic.com/xdata/images/hotel/max1280x900/73200467.jpg?k=4140c619f009bca500ed3189c1b775ad21b877e593cac31806ebbcc37dda015a&o=&hp=1",
+        "categoria":"Departamento",
+        "titulo":"Tierra Virgen Apartments",
+        "ubicacion":"Sarmiento esquina Lavalle 4, Purmamarca",
+        "descipcion":"El establecimiento Tierra Virgen se encuentra en Purmamarca, a 200 metros del cerro de los Siete Colores. Se ofrece WiFi gratuita."
+    }
+
+]
+

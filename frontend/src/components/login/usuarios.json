@@ -1,0 +1,32 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Dolores",
+            "apellido": "Aleman",
+            "mail": "doloresaleman@gmail.com",
+            "password": "123456"
+        },
+        {
+            "id": 2,
+            "nombre": "Guillermina",
+            "apellido": "Santia",
+            "mail": "guillermina@gmail.com",
+            "password": "123456"
+        },
+        {
+            "id": 3,
+            "nombre": "Lucas",
+            "apellido": "Garcia",
+            "mail": "lucas@gmail.com",
+            "password": "123456"
+        },
+        {
+            "id": 4,
+            "nombre": "Silvia",
+            "apellido": "Ratero",
+            "mail": "Silvia@gmail.com",
+            "password": "123456"
+        }
+    ]
+}

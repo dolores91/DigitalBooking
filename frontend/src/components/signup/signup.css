@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.flex-container {
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+ }
+.sub-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.titulo {
+  /* B- Heading 1 */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  align-self: center;
+  margin: 5%;
+  margin-left: 8%;
+
+  /* B -DB COLOR PRINCIPAL */
+  color: #1dbeb4;
+}
+.labelSU {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  margin-top: 3%;
+  /* B - DB COLOR 2 */
+  color: #383b58;
+}
+.inputSU {
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  height: 40px;
+  width: 448px;
+  left: 0px;
+  top: 0px;
+}
+.inputSUNyA{
+  border-radius: 5px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  height: 40px;
+  left: 0px;
+  top: 0px;
+  width: 218px;
+}
+.btSU {
+  background: #1dbeb4;
+  border-style: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  justify-content: center;
+  height: 40px;
+  width: 206px;
+  left: 0px;
+  top: 0px;
+
+  /* botton sombra */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  /* botton texto */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 28%;
+  
+}
+
+.textoSU {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 15px;
+}
+.link{
+  text-decoration: none;
+  color: #4285F4;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
+.material-symbols-outlined {
+  border-radius: 50%;
+  background-color: #f9f6f6;
+  position: absolute;
+  margin-top: 20px;
+  color: rgb(183, 181, 181);
+  right: 80px;
+}
+
+.container-signup {
+  position: relative;
+  
+}
+
+.errors{
+  color: #FF0000;
+  display: block;
+font-family: Roboto;
+font-size: 11px;
+font-weight: 500;
+text-align:end;
+justify-content: end;
+
+}
+
+
+/*IPAD mini*/
+@media screen and (max-width: 768px){
+  .flex-container {
+      background-color: #c4c4c4;
+      width: 100%;
+      height: 900px;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+     
+    }}
+/*Iphone 12 PRO*/
+@media screen and (max-width: 390px){
+.flex-container {
+    background-color: #c4c4c4;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+   
+  }
+
+  .inputSU {
+    
+    width: 300px;
+   
+  }
+  .sub-container {
+    display: block;
+    
+  }
+  .inputSUNyA{
+   width: 300px;
+  }
+  .btSU {
+    
+    margin-left: 15%;
+    
+  }
+  .material-symbols-outlined {
+    margin-top: 10px;
+    right: 10px;
+  }
+}

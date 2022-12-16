@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+
+.titulo-prod{
+    /* Administración */
+margin-bottom: 12px;
+/* B- Heading 1 */
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+
+/* gris suave */
+
+color: #FFFFFF;
+   
+}

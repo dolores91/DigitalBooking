@@ -1,0 +1,1884 @@
+{
+	"info": {
+		"_postman_id": "9448588b-e812-41cb-8d87-f199767fe6ea",
+		"name": "pig3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18759309"
+	},
+	"item": [
+		{
+			"name": "product",
+			"item": [
+				{
+					"name": "GET products",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkZWxmaUBnbWFpbC5jb20iLCJzdXJuYW1lIjoiR2FyY2lhIiwibmFtZSI6IkRlbGZpIiwiaWF0IjoxNjcwNTAyNTM1LCJleHAiOjE2NzA1MDYxMzV9.-2Cgt0kEMJOiS_StYogw_keodwN3_Fr7oCyIV5zKVWjxWzqr3eqTn8EGtcj-DoJxZsAXTZwwKWs621Q2jop-Bg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nuevo Hotel, Prueba Post Producto \",\r\n    \"mainDescription\": \"Conectate con la naturaleza\",\r\n    \"descriptionA\": \"El KM SUN HOSTEL, situado en San Carlos de Bariloche, a 300 metros de Melipal, ofrece alojamiento con bar, estacionamiento privado gratuito, salón común y jardín. \",\r\n    \"descriptionB\": \"Todas las habitaciones del hostel tienen armario. Todos los alojamientos incluyen ropa de cama.\",\r\n    \"descriptionC\": \"El KM SUN HOSTEL sirve un desayuno americano todos los días.\",\r\n    \"descriptionD\": \"El alojamiento dispone de terraza.\",\r\n    \"address\": \"Avenida Boock 199 Avenida Boock 199, 8400 San Carlos de Bariloche, Argentina –\",\r\n    \"location_detail\": \"Excelente Ubicacion\",\r\n    \"latitude\": -41.1198,\r\n    \"longitude\": -71.3885,\r\n    \"city\": {\r\n        \"id\": 2\r\n    },\r\n    \"category\": {\r\n        \"id\": 2\r\n    },\r\n    \"image\": [\r\n        {\r\n            \"title\": \"Nueva Imagen 1\",\r\n            \"description\": \"Imagen del hotel\",\r\n            \"url\": \"https://imagenes-camada3-grupo3.s3.us-east-2.amazonaws.com/desayuno/4-Desayuno+KM+SUN.jpg\"\r\n        },\r\n        {\r\n            \"title\": \"Nueva Imagen 2\",\r\n            \"description\": \"Imagen del hotel\",\r\n            \"url\": \"https://imagenes-camada3-grupo3.s3.us-east-2.amazonaws.com/pileta/4-Pileta+KM+SUN.jpg\"\r\n        },\r\n        {\r\n            \"title\": \"Nueva Imagen 3\",\r\n            \"description\": \"Imagen del hotel\",\r\n            \"url\": \"https://imagenes-camada3-grupo3.s3.us-east-2.amazonaws.com/ba%C3%B1o/4-Ba%C3%B1o+KM+SUN.jpg\"\r\n        },\r\n        {\r\n            \"title\": \"Nueva Imagen 4\",\r\n            \"description\": \"Imagen del hotel\",\r\n            \"url\": \"https://imagenes-camada3-grupo3.s3.us-east-2.amazonaws.com/hotel/4-Hotel+KM+SUN.jpg\"\r\n        },\r\n        {\r\n            \"title\": \"Nueva Imagen 5\",\r\n            \"description\": \"Imagen del hotel\",\r\n            \"url\": \"https://imagenes-camada3-grupo3.s3.us-east-2.amazonaws.com/habitacion/4-Habitacion+KM+SUN.jpg\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Casa\",\r\n        \"year\": \"1995\",\r\n        \"description\": \"Gran casa en centro\",\r\n        \"city\": {\r\n            \"id\": 2,\r\n            \"name\": \"Rosario\",\r\n            \"country\": \"Argentina\"\r\n        },\r\n        \"category\": {\r\n            \"id\": 1,\r\n            \"name\": \"Casa\",\r\n            \"type\": \"Casa\"\r\n        },\r\n        \"rule\": {\r\n            \"id\": 1,\r\n            \"name\": \"check-in\",\r\n            \"description\": \"el check-in es antes de las 10am\",\r\n            \"fine\": 1000.0\r\n        },\r\n        \"image\": {\r\n            \"id\": 1,\r\n            \"name\": \"mi-imagen.png\",\r\n            \"description\": \"una imagen\",\r\n            \"url\": \"http://localhost:8080/images\"\r\n        },\r\n        \"attribute\": null\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET productFindById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE product",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ4bHJ2QGhvdG1haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA3MzY0MSwiZXhwIjoxNjYyMDc3MjQxfQ.-28y1HW_-o4RvzBwpOK-UaSxQiiEW2M9Fc4z3yOEPKyvmNiaaafkXvLvABjN8IW24J9ObNUUM4vLSl4n-K_7sg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET productByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/category/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"category",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET productsByRule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/rule/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"rule",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET productsByCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/city/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"city",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET productPageable",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product/6/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"6",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product attributes",
+			"item": [
+				{
+					"name": "GET product_attribute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_attribute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_attribute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST product_attribute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product\":{\r\n            \"id\": 10,\r\n            \"name\": \"Hotel Imperio\",\r\n            \"year\": \"2014\",\r\n            \"description\": \"Gran hotel cerca del centro \",\r\n            \"city\": {\r\n                \"id\": 1,\r\n                \"name\": \"Buenos Aires\",\r\n                \"country\": \"Argentina\"\r\n            },\r\n            \"category\": {\r\n                \"id\": 1,\r\n                \"name\": \"Apartamento\",\r\n                \"type\": \"Vivienda\"\r\n            },\r\n            \"rule\": {\r\n                \"id\": 1,\r\n                \"name\": \"check-in\",\r\n                \"description\": \"el check-in es antes de las 10am\",\r\n                \"fine\": 1000.0\r\n            },\r\n            \"image\": {\r\n                \"id\": 1,\r\n                \"name\": \"mi-imagen.png\",\r\n                \"description\": \"una imagen\",\r\n                \"url\": \"http://localhost:8080/images\"\r\n            }\r\n    },\r\n    \"attribute\":{\r\n        \"id\":2,\r\n        \"name\":\"Piscina\",\r\n        \"type\":\"Piscina\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_attribute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_attribute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findById product_attribute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_attribute/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_attribute",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT product_attribute",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 7,\r\n        \"product\": {\r\n            \"id\": 9,\r\n            \"name\": \"Vivienda\",\r\n            \"year\": \"2001\",\r\n            \"description\": \"Vivienda\",\r\n            \"city\": {\r\n                \"id\": 2,\r\n                \"name\": \"Medellin\",\r\n                \"country\": \"Colombia\"\r\n            },\r\n            \"category\": {\r\n                \"id\": 1,\r\n                \"name\": \"Apartamento\",\r\n                \"type\": \"Vivienda\"\r\n            },\r\n            \"rule\": {\r\n                \"id\": 1,\r\n                \"name\": \"check-in\",\r\n                \"description\": \"el check-in es antes de las 10am\",\r\n                \"fine\": 1000.0\r\n            },\r\n            \"image\": {\r\n                \"id\": 1,\r\n                \"name\": \"mi-imagen.png\",\r\n                \"description\": \"una imagen\",\r\n                \"url\": \"http://localhost:8080/images\"\r\n            }\r\n        },\r\n        \"attribute\": {\r\n            \"id\": 2,\r\n            \"name\": \"Piscina\",\r\n            \"type\": \"Piscina\"\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_attribute/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_attribute",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE product_attribute",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_attribute/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_attribute",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET product_attribute findByProductId",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product rules",
+			"item": [
+				{
+					"name": "GET product_rule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_rule/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_rule",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET rules by product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/product_rule/product/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"product_rule",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "GET category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByIdCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/category/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Casa\",\r\n        \"type\": \"Vivienda\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name\": \"Casa quinta\",\r\n            \"type\": \"Vivienda\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/category/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "city",
+			"item": [
+				{
+					"name": "GET city",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST city",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"name\": \"Mendoza\",\r\n            \"country\": \"Argentina\"\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByIdCity",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT city",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Alejo Ledesma\",\r\n        \"country\": \"Cordoba\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE city",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/city/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"city",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "rule",
+			"item": [
+				{
+					"name": "GET findByIdRule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/rule/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET rule",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/rule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST rule",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"check-OUT\",\r\n        \"description\": \"el check-out es antes de las 15pm\",\r\n        \"invoice\": 5000.0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/rule",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rule"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT rule",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"check-out\",\r\n        \"description\": \"el check-out es antes de las 15pm\",\r\n        \"fine\": 5000.0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/rule/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE rule",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/rule/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/rule/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"rule",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "attribute",
+			"item": [
+				{
+					"name": "PUT attribute",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Tres Habitaciones\",\r\n        \"type\": \"Comodidades\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/attribute/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"attribute",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE attribute",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/attribute/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"attribute",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET attribute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/attribute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"attribute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByIdAttribute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/attribute/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"attribute",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST attribute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Cama doble\",\r\n        \"type\": \"Cuarto\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/attribute",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"attribute"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "token",
+			"item": [
+				{
+					"name": "POST token",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"fede@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST token Sil User",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"silvia@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST token Delfi Admin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"delfi@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST token Wedny",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"wendy@gmail.com\",\r\n    \"password\": \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST token Dolo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"doloresalemang@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "GET user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZWRlQGdtYWlsLmNvbSIsInN1cm5hbWUiOiJHYXJjaWEiLCJuYW1lIjoiRmVkZSIsImlhdCI6MTY2OTc0ODIwNiwiZXhwIjoxNjY5NzUxODA2fQ.NhlldgnVXpdH9VwfN2-MoOjBMm3Nu4-zwJv20JHvhUeH7C_EpjoR_rFbH18uL8hylwAf5DMKdQ8iJWA3Ed3eeg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idNumber\": \"47443012\",\r\n    \"email\": \"delfi@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Delfi\",\r\n    \"surname\": \"Garcia\",\r\n    \"role\": {\r\n        \"id\": 1,\r\n        \"name\": \"ROLE_ADMIN\",\r\n        \"active\": \"S\"\r\n     }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST user Sil",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idNumber\": \"33030303\",\r\n    \"email\": \"silvia@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Silvia\",\r\n    \"surname\": \"Ratero\",\r\n    \"role\": {   \r\n        \"id\": 2,\r\n        \"name\": \"ROLE_USER\",\r\n        \"active\": \"S\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST user Wendy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idNumber\": \"22222222\",\r\n    \"email\": \"wendy@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"name\": \"Wendy\",\r\n    \"surname\": \"Esquivel\",\r\n    \"role\": {\r\n        \"id\": 1,\r\n        \"name\": \"ROLE_ADMIN\",\r\n        \"active\": \"S\"\r\n     }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA0NTU4MiwiZXhwIjoxNjYyMDQ5MTgyfQ.ikfWUxZ-3ArsdQJ-N2eVdE4lukRVk_YuksNUO01zjUzarNwlkXqOJpgEA43r5ats-X6jl2xqjR5s45DBOPFFTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"id\": 1,\r\n        \"idNumber\": \"123456\",\r\n        \"email\": \"lucas@gmail.com\",\r\n        \"password\": \"12345\",\r\n        \"name\": \"Federico\",\r\n        \"surname\": \"Garcia\",\r\n        \"role\": {\r\n            \"idrole\": 2,\r\n            \"name\": \"ROLE_USER\",\r\n            \"active\": \"S\"\r\n        },\r\n             \"city\":{\r\n        \"idcity\":5,\r\n        \"name\":\"Rio Cuarto\",\r\n        \"country\":\"Argentina\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA0NTU4MiwiZXhwIjoxNjYyMDQ5MTgyfQ.ikfWUxZ-3ArsdQJ-N2eVdE4lukRVk_YuksNUO01zjUzarNwlkXqOJpgEA43r5ats-X6jl2xqjR5s45DBOPFFTQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByIdUser",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "booking",
+			"item": [
+				{
+					"name": "GET booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ3ZW5keUBnbWFpbC5jb20iLCJzdXJuYW1lIjoiRXNxdWl2ZWwiLCJuYW1lIjoiV2VuZHkiLCJpYXQiOjE2Njk4NTIzMzIsImV4cCI6MTY2OTg1NTkzMn0.aaVxZ9cCxUmXiiPPqGrHJ-EYODViaFmJfh4mKgH7pDS9BpS6qpzCFIs-sUd4pOOLH3NPxITJPp_647dUUcu09g",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByIdBooking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA0NzQxMywiZXhwIjoxNjYyMDUxMDEzfQ.pKKeOu7DCosXHut7I0yvjVktrZv5z4cV94hH5G4xD_LELFTs_Zv2fDVY4PbKqhGvISzE9kfrL59-gXZhRk8Nyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/booking/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA0NzQxMywiZXhwIjoxNjYyMDUxMDEzfQ.pKKeOu7DCosXHut7I0yvjVktrZv5z4cV94hH5G4xD_LELFTs_Zv2fDVY4PbKqhGvISzE9kfrL59-gXZhRk8Nyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"checkIn\": \"2022-10-01T05:00:00.000+00:00\",\r\n        \"checkOut\": \"2022-10-21T05:00:00.000+00:00\",\r\n        \"product\": {\r\n            \"id\": 1,\r\n            \"name\": \"Casa\",\r\n            \"year\": \"2015\",\r\n            \"description\": \"Casa\",\r\n            \"city\": {\r\n                \"id\": 1,\r\n                \"name\": \"Cordoba\",\r\n                \"country\": \"Argentina\"\r\n            },\r\n            \"category\": {\r\n                \"id\": 1,\r\n                \"name\": \"Apartamento\",\r\n                \"type\": \"Vivienda\"\r\n            },\r\n            \"rule\": {\r\n                \"id\": 1,\r\n                \"name\": \"check-out\",\r\n                \"description\": \"checkout before 3pm\",\r\n                \"fine\": 1000.0\r\n            },\r\n            \"image\": {\r\n                \"id\": 1,\r\n                \"name\": \"mi-imagen.png\",\r\n                \"description\": \"una imagen\",\r\n                \"url\": \"http://localhost:8080/images\"\r\n            }\r\n        },\r\n        \"customer\": {\r\n            \"id\": 1,\r\n            \"idNumber\": \"1013616358\",\r\n            \"email\": \"lucs.rioiv@gmail.com\",\r\n            \"password\": \"$2a$10$TzMMHNtXEwvRg1Yd1voRFueordr3IvMFYT85hJQYsuTPYWtnBZpNW\",\r\n            \"name\": \"Lucas\",\r\n            \"surname\": \"Garcia\",\r\n            \"role\": {\r\n                \"id\": 1,\r\n                \"name\": \"ROLE_ADMIN\",\r\n                \"enable\": \"S\"\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/booking",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA0NzQxMywiZXhwIjoxNjYyMDUxMDEzfQ.pKKeOu7DCosXHut7I0yvjVktrZv5z4cV94hH5G4xD_LELFTs_Zv2fDVY4PbKqhGvISzE9kfrL59-gXZhRk8Nyw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"checkInDate\": \"2022-10-01T05:00:00.000+00:00\",\r\n        \"checkOutDate\": \"2022-10-21T05:00:00.000+00:00\",\r\n        \"product\": {\r\n                \"id\": 2,\r\n                \"name\": \"Renault\",\r\n                \"year\": \"2014\",\r\n                \"description\": \"House\",\r\n                \"city\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Rio Cuarto\",\r\n                    \"country\": \"Argentina\"\r\n                },\r\n                \"category\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Apartamento\",\r\n                    \"type\": \"Vivienda\"\r\n                },\r\n                \"rule\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"check-in\",\r\n                    \"description\": \"checkout before 3pm\",\r\n                    \"fine\": 1000.0\r\n                },\r\n                \"image\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"mi-imagen.png\",\r\n                    \"description\": \"una imagen\",\r\n                    \"url\": \"http://localhost:8080/images\"\r\n                }\r\n            },\r\n        \"user\": {\r\n            \"id\": 1,\r\n            \"idNumber\": \"1013616358\",\r\n            \"email\": \"lucs.rioiv@gmail.com\",\r\n            \"password\": \"sfavsfvasfvafvaefvaaefdvadfvWWW223\",\r\n            \"name\": \"Lucas\",\r\n            \"lastName\": \"Garcia\",\r\n            \"role\": {\r\n                \"id\": 1,\r\n                \"name\": \"ROLE_ADMIN\",\r\n                \"enable\": \"S\"\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/booking/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"booking",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA2Mjk4NSwiZXhwIjoxNjYyMDY2NTg1fQ.rHdEQSuTjOVHW6gnX6m8K25KYkl4aZVSbz4Nl1doeZ-zFRN09_ZByyHz7a1GPq9ibcZPdY9EadRvjDIqIWjP6Q",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/booking/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"booking",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByUserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmZWRlQGdtYWlsLmNvbSIsInN1cm5hbWUiOiJHYXJjaWEiLCJuYW1lIjoiRmVkZSIsImlhdCI6MTY2OTc0ODMzMywiZXhwIjoxNjY5NzUxOTMzfQ.SHcvn4iFOJcNOwlHI1kb0B37fNnOx6-h8xr2VvB0DNXULnwseWpg9woYCXqLAWC1BfWsjGrir5PyIiTHGeTqxw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/booking/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"booking",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "favorite",
+			"item": [
+				{
+					"name": "GET favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA3MzI4OSwiZXhwIjoxNjYyMDc2ODg5fQ.byNRTPLOzuR1uz7dG91cmQ0bMGUByKENR4VJRrf3yuXWbb07dYDSDzrfYUwnAvOgkOoyvQAnBemcAmgHFBeJqQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/favorite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET findByIdFavorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA2OTE5MywiZXhwIjoxNjYyMDcyNzkzfQ.1MEHxkZE4HRyI3UaG74nX45_5EXCBryjDtPtfIDxin3gDGCecENlkfKv78x3Oss54fkr67L8GTCvCyaoWFfNtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/favorite/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"favorite",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA2OTE5MywiZXhwIjoxNjYyMDcyNzkzfQ.1MEHxkZE4HRyI3UaG74nX45_5EXCBryjDtPtfIDxin3gDGCecENlkfKv78x3Oss54fkr67L8GTCvCyaoWFfNtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": 1,\r\n        \"product\": {\r\n            \"id\": 2,\r\n            \"name\": \"Apartment\",\r\n            \"year\": \"2014\",\r\n            \"description\": \"Luxorious\",\r\n            \"city\": {\r\n                \"id\": 1,\r\n                \"name\": \"Rio Cuarto\",\r\n                \"country\": \"Argentina\"\r\n            },\r\n            \"category\": {\r\n                \"id\": 1,\r\n                \"name\": \"Apartamento\",\r\n                \"type\": \"Vivienda\"\r\n            },\r\n            \"rule\": {\r\n                \"id\": 1,\r\n                \"name\": \"check-in\",\r\n                \"description\": \"No animals in appartment\",\r\n                \"fine\": 1000.0\r\n            },\r\n            \"image\": {\r\n                \"id\": 1,\r\n                \"name\": \"mi-imagen.png\",\r\n                \"description\": \"una imagen\",\r\n                \"url\": \"http://localhost:8080/images\"\r\n            }\r\n        },\r\n        \"customer\": {\r\n            \"id\": 1,\r\n            \"idNumber\": \"1013616358\",\r\n            \"email\": \"lucs.rioiv@gmail.com\",\r\n            \"password\": \"$2a$10$TzMMHNtXEwvRg1Yd1voRFueordr3IvMFYT85hJQYsuTPYWtnBZpNW\",\r\n            \"name\": \"Lucas\",\r\n            \"surname\": \"Garcia\",\r\n            \"role\": {\r\n                \"id\": 1,\r\n                \"name\": \"ROLE_ADMIN\",\r\n                \"enable\": \"S\"\r\n            }\r\n        }\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/favorite",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"favorite"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA2OTE5MywiZXhwIjoxNjYyMDcyNzkzfQ.1MEHxkZE4HRyI3UaG74nX45_5EXCBryjDtPtfIDxin3gDGCecENlkfKv78x3Oss54fkr67L8GTCvCyaoWFfNtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/favorite/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"favorite",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT favorite",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYWVyYjkwMTFAZ21haWwuY29tIiwibGFzdE5hbWUiOiJQYW5xdWV2YSIsIm5hbWUiOiJEaWVnbyIsImlhdCI6MTY2MjA2OTE5MywiZXhwIjoxNjYyMDcyNzkzfQ.1MEHxkZE4HRyI3UaG74nX45_5EXCBryjDtPtfIDxin3gDGCecENlkfKv78x3Oss54fkr67L8GTCvCyaoWFfNtQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n            \"product\": {\r\n                \"id\": 2,\r\n                \"name\": \"Casa\",\r\n                \"year\": \"2015\",\r\n                \"description\": \"Casa\",\r\n                \"city\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Bogota\",\r\n                    \"country\": \"Colombia\"\r\n                },\r\n                \"category\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Apartamento\",\r\n                    \"type\": \"Vivienda\"\r\n                },\r\n                \"rule\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"Bar\",\r\n                    \"description\": \"Sacar cosas del bar sin aviso\",\r\n                    \"fine\": 1000.0\r\n                },\r\n                \"image\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"mi-imagen.png\",\r\n                    \"description\": \"una imagen\",\r\n                    \"url\": \"http://localhost:8080/images\"\r\n                }\r\n            },\r\n            \"user\": {\r\n                \"id\": 1,\r\n                \"document\": \"1013616358\",\r\n                \"email\": \"lucs.rioiv@gmail.com\",\r\n                \"password\": \"$2a$10$TzMMHNtXEwvRg1Yd1voRFueordr3IvMFYT85hJQYsuTPYWtnBZpNW\",\r\n                \"name\": \"Lucas\",\r\n                \"lastName\": \"Garcia\",\r\n                \"role\": {\r\n                    \"id\": 1,\r\n                    \"name\": \"ROLE_ADMIN\",\r\n                    \"enable\": \"S\"\r\n                }\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/favorite/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"favorite",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "filter",
+			"item": [
+				{
+					"name": "POST searchFilterCityDates / Bariloche",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzaWx2aWFAZ21haWwuY29tIiwic3VybmFtZSI6IlJhdGVybyIsIm5hbWUiOiJTaWx2aWEiLCJpYXQiOjE2NzA1MDEyODYsImV4cCI6MTY3MDUwNDg4Nn0.T66NOuw3A9Xl3LYu9nqjpQEvRHhtcNqOhGNIe0SILki4mNh4VUvvsDJB6-0Khba-xMCKqwZfHVl7Taw_0DkoRw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city\":{\r\n        \"id\":1\r\n    },\r\n    \"checkin_date\":\"2023-01-01\",\r\n    \"checkout_date\":\"2024-12-12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/search_filter/city_dates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"search_filter",
+								"city_dates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET searchFilterDates",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/search_filter/2022-08-01/2023-03-30",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"search_filter",
+								"2022-08-01",
+								"2023-03-30"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "Get role",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/role",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"role"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

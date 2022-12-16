@@ -1,0 +1,167 @@
+
+.banner{ background-color: #545776;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 78px;
+    width: 100%;
+    padding: 0 30px;
+  
+
+}
+
+.containerBloqueBuscador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 10px 25px 10px;
+}
+
+.titulo-banner {
+padding: 10px;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+color: #dfe4ea;
+margin-top: 15px;}
+
+.buscador{
+/*display: flex;
+justify-content: space-around;*/
+margin-right: 8px;
+
+}
+
+.seleccion{
+display: flex;
+align-items: center;
+padding: 5px 60px; 
+color:#545776;
+background: #ffffff;
+box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+width: 422px;
+height: 38px;
+margin-right: 8px;
+font-size: 14px;
+font-style: normal;
+padding-left: 10px;
+cursor: pointer;
+
+
+
+
+}
+
+.date {
+position: absolute;
+top: 50px;
+z-index: 2;
+}
+
+
+/*font-weight: 500;
+text-align: start;*/
+
+.iconoBuscador{
+color: #545776;
+padding: 5px;
+font-size: large;
+}
+
+.buscadorCiudades{
+border: none;
+width: 100%;
+outline: none;
+}
+
+
+
+.botonBanner{
+color: #dfe4ea;
+background-color: #1DBEB4;
+width: 206px;
+height: 40px;
+border: none;
+border-radius: 8px;
+font-weight: 700;
+font-size: 16px;
+transition: 0.5s ease all;
+cursor: pointer;
+}
+
+.dateRange{
+position: absolute;
+top: 210px;
+z-index: 2;
+}
+/*background-color:#1DBEB4;
+cursor: pointer;
+border: none;
+gap: 10px;
+padding: 5px 40px;*/
+
+
+@media screen and (max-width: 768px) {
+.titulo-banner {
+    font-size: 21px;
+;}
+
+.buscador{
+    flex-wrap: wrap;
+}
+
+.seleccion{
+margin: 5px;
+width: 270px;
+}
+.botonBanner{
+    margin:5px;
+  
+
+}
+
+.selectorFecha{
+    font-size: 9.3px;
+    
+}
+
+.botonBanner{
+    width: 90px;
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 390px) {
+
+    .titulo-banner {
+        font-size: 16.5px;
+    ;}
+
+    .botonBanner{
+        width: 270px;
+    }
+
+    .dateRange{
+     top: 240px;
+     margin-left: -30px;
+    }
+
+    .containerBloqueBuscador{
+        flex-direction: column;}
+   
+
+.buscador{
+            width: 270px;
+            margin-left: 5px;
+          
+        }
+
+}
+

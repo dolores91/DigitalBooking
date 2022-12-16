@@ -1,0 +1,1 @@
+SELECT * from bookingpfg3.categories;
