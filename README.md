@@ -2,7 +2,8 @@
 El proyecto se enfoca en generar, enmarcado en la carrera de Certified Tech Developer, una experiencia que replica un escenario laboral real y la cultura de la industria tecnológica. Esto nos permite así poder integrar los principales conocimientos y habilidades de los bimestres anteriores y de las metodologías de trabajo. 
 
 Para ello, se plantearon 4 sprints en los que se fue realizando el trabajo integrador de forma grupal, en donde cada integrante del grupo ocupó diferentes roles para llevar a cabo el mismo.
-Mi rol fué de FRONTEND DEVELOPER | TESTER QA con las siguientes responsabilidades:
+
+#Mi rol fué de FRONTEND DEVELOPER | TESTER QA con las siguientes responsabilidades:
 Diseñar y desarrollar interfaces utilizando HTML, CSS y React.
 
 Adaptar las páginas a los distintos dispositivos —smartphone,tablet y desktop—.
