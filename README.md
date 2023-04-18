@@ -5,6 +5,7 @@ El objetivo final del proyecto integrador consistió en desarrollar una aplicaci
 
 Para ello, se plantearon 4 sprints en los que se fue realizando el trabajo integrador de forma grupal, en donde cada integrante del grupo ocupó diferentes roles para llevar a cabo el mismo.
 
+(Link al video)[https://www.linkedin.com/posts/dolores-aleman_certifiedtechdeveloper-activity-7011463738021044224-Kagx?utm_source=share&utm_medium=member_desktop]
 
 ## Mi rol fué de FRONTEND DEVELOPER | TESTER QA con las siguientes responsabilidades:
 
